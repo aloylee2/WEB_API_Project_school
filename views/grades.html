@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            width: 100%;
+            table-layout: fixed;
+            overflow-wrap: break-word;
+            text-align:center;
+            font-weight: bold;
+        }
+        .GPA table{
+            width:50%;
+            margin-top:90px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Grades</title>
+</head>
+<body>
+    <section>
+        <table class="viewGrades">
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Module</th>
+                    <th>Grade</th>
+                    <th>Credit</th>
+                    <th>GPA</th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="GPA">
+        <table>
+            <tr>
+                <th>Grade</th>
+                <th>GPA</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>4.0</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>3.0</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>2.0</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>0.0</td>
+            </tr>
+        </table>
+    </section>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/grades.js"></script>
+</body>
+</html>

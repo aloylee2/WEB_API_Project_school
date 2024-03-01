@@ -1,0 +1,18 @@
+
+.addNewCca {
+    display:none;
+}
+
+.addNewStudent {
+    display:none;
+}
+.addNewTeacher {
+    display:none;
+}
+table, th,td {
+    border:1px solid black;
+}
+
+.addNewbooking {
+    display:none;
+}

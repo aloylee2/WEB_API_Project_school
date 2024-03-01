@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+        <header>
+                <h1><a href="/user">Edit Profile Page</a></h1>
+        </header>
+        <form onsubmit="return editUser();">
+                <label for="UserName">User Name:</label>
+                <input type="text" id="UserName" name="UserName"><br>
+
+                <label for="Password">Password:</label>
+                <input type="text" id="Password" name="Password"><br>
+
+                <label for="Email">Email:</label>
+                <input type="text" id="Email" name="Email"><br>
+                <button type="submit">Save Edited User</button>
+        </form>
+        <br>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/edituser.js"></script>
+        <script src="/js/auth.js"></script>
+</body>
+
+</html>

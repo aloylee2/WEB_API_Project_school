@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <style>
+        .addcourseuser{
+            display: none;
+        }
+    </style>
+    <title>Course User Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <h1>Course User Page</h1>
+    <section class="events">
+
+    </section>
+    <section>
+        <button class="booking">Add Course</button>
+    </section>
+    <br>
+    <section class="addcourseuser">
+        <form onsubmit="return addcourseuser();"> 
+            
+            <label for="name">Course:</label>
+            <select name="name" id="name"></select>
+            <br>
+            <label for="id">Course ID:</label>
+            <input type="text" id="id" name="id"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <div class="statusMessage"></div>
+    </section>
+    <script src='/js/jquery.min.js'></script>
+    <script src='/js/auth.js'></script>
+    <script src='/js/courseuser.js'></script>
+</body>
+
+</html>

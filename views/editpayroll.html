@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+        <header>
+                <h1>Payroll Management Page</h1>
+        </header>
+                        <form onsubmit="return payroll();"> 
+                <!-- <label for="user">ID:</label> -->
+                <input type="text" id="user" name="user" hidden>
+                <br>
+                <label for="amount">Amount to transfer:</label>
+                <input type="text" id="amount" name="amount" >
+                <br>
+                <button type="submit">Transfer amount</button>
+        </form>
+        <div class="statusMessage"></div>
+        <br>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/editPayroll.js"></script>
+</body>
+
+</html>

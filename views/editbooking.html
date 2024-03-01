@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+        <header>
+                <h1><a href="/booking">Edit Booking Page</a></h1>
+        </header>
+        <h2>Edit event</h2>
+        <form onsubmit="return editBooking();">
+                <label for="student">Student:</label>
+                <input type="text" id="student" name="student">
+                <br>
+                <label for="facilities">Facilities:</label>
+                <input type="text" id="facilities" name="facilities">
+                <br>
+                <label for="startDate">Start Date:</label>
+                <input type="text" id="startDate" name="startDate">
+                <label for="startTime">Start Time:</label>
+                <input type="text" id="startTime" name="startTime">
+                <br>
+                <label for="endDate">End Date:</label>
+                <input type="text" id="endDate" name="endDate">
+                <label for="startTime">End Time:</label>
+                <input type="text" id="endTime" name="endTime">
+                <br>
+                <button type="submit">Save booking</button>
+        </form>
+        <button class="deleteEventBtn">Delete booking</button>
+        <br>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/editbooking.js"></script>
+</body>
+
+</html>

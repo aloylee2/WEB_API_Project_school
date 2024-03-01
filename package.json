@@ -1,0 +1,25 @@
+{
+  "name": "2021s2_wad_m2_schoolsystem_junkang",
+  "version": "1.0.0",
+  "description": "WAD Project M2",
+  "main": "course.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xenoficx/2021S2_WAD_M2_SchoolSystem_JunKang.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xenoficx/2021S2_WAD_M2_SchoolSystem_JunKang/issues"
+  },
+  "homepage": "https://github.com/Xenoficx/2021S2_WAD_M2_SchoolSystem_JunKang#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.2.1",
+    "nodemon": "^2.0.15"
+  }
+}

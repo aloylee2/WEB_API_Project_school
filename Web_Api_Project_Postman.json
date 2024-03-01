@@ -1,0 +1,549 @@
+{
+	"info": {
+		"_postman_id": "dbf45f7a-c723-41d3-bf29-c5ff37301588",
+		"name": "Web Api Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Module",
+			"item": [
+				{
+					"name": "Add Module",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "moduleName",
+									"value": "Module Name",
+									"type": "text"
+								},
+								{
+									"key": "moduleDesc",
+									"value": "Module Description",
+									"type": "text"
+								},
+								{
+									"key": "credit",
+									"value": "Number",
+									"type": "text"
+								},
+								{
+									"key": "hour",
+									"value": "Number",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/modules",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"modules"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Grade",
+			"item": [
+				{
+					"name": "Get Grades",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:3000/grades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"grades"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Course",
+			"item": [
+				{
+					"name": "Get All Courses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Course by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "61ebb3941268e62f939e04e3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Course",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "courseName",
+									"value": "Applied Chemistry",
+									"type": "text"
+								},
+								{
+									"key": "courseDesc",
+									"value": "Discover the mysterious and captivating properties of chemicals, drugs and materials by going on an exciting applications-based journey with us. The Diploma in Applied Chemistry (DAPC) is the first diploma in Singapore to focus on building a strong foundation in chemistry which provides you the versatility to work in various chemistry-related sectors.",
+									"type": "text"
+								},
+								{
+									"key": "courseID",
+									"value": "EG1708",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Course by ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "61fe8b2a148b42301e287029",
+									"type": "text"
+								},
+								{
+									"key": "courseName",
+									"value": "Applied Chemistry",
+									"type": "text"
+								},
+								{
+									"key": "courseDesc",
+									"value": "Discover the mysterious and captivating properties of chemicals, drugs and materials by going on an exciting applications-based journey with us. The Diploma in Applied Chemistry (DAPC) is the first diploma in Singapore to focus on building a strong foundation in chemistry which provides you the versatility to work in various chemistry-related sectors.",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/courses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"courses"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student Module",
+			"item": [
+				{
+					"name": "add studentmodule",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "courseID",
+									"value": "6203e1f8f177ac6b9baff9e0",
+									"type": "text"
+								},
+								{
+									"key": "module",
+									"value": "Piloting Seat",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/studentmodules",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"studentmodules"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get student module",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/studentmodules/Piloting Seat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"studentmodules",
+								"Piloting Seat"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/61ea7b6cca95b684c711222a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"61ea7b6cca95b684c711222a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "aloy",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "aloy",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "aloy",
+									"type": "default"
+								},
+								{
+									"key": "emailaddress",
+									"value": "aloy@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "role",
+									"value": "student",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "alston",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "alston",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "alston",
+									"type": "default"
+								},
+								{
+									"key": "emailaddress",
+									"value": "alston",
+									"type": "default"
+								},
+								{
+									"key": "role",
+									"value": "Teacher",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/61ea722f4050e4ada6a29ff8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"61ea722f4050e4ada6a29ff8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/61ea7b5cca95b684c7112226",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"61ea7b5cca95b684c7112226"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all users by role",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Check token",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "flightNumber",
+									"value": "TW339",
+									"type": "text"
+								},
+								{
+									"key": "source",
+									"value": "Taiwan",
+									"type": "text"
+								},
+								{
+									"key": "destination",
+									"value": "Bangkok",
+									"type": "text"
+								},
+								{
+									"key": "distance",
+									"value": "3200",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/items?token=8bcebd17a21b862b6b5c7e6c76fdf316",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"items"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "8bcebd17a21b862b6b5c7e6c76fdf316"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

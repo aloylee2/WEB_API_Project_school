@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page Welcome!</title>
+    <style>
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a.login {
+            float: right;
+        }
+        .navbar a#logout{
+            float: right;
+            display: none;
+        }
+        .navbar a#profile{
+            float:right;
+            display:none;
+        }
+        .navbar a#payschool{
+            float:right;
+            display:none;
+        }
+        .navbar a#payroll{
+            float:right;
+            display:none;
+        }
+        .navbar a#course{
+            float:right;
+            display:none;
+        }
+        .navbar a#cca{
+            float:right;
+            display:none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .centered {
+            position: fixed; 
+            top: 50%;
+            left: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>School Website</h1>
+      </div>
+      
+      <div class="navbar">
+        <a href="/course">Courses</a>
+        <a href="/cca">CCAs</a>
+        <a href="/booking" class="bookingLink">Bookings</a>
+        <a href="/timetable" class="timetableLink">Timetable</a>
+        <a href="/attendancebymodule" class="attendanceLink">Attendance</a>
+        <a href="#" class="logoutLink" id="logout">Logout</a>
+        <a href="/user" class="ProfileLink" id="profile">Profile Page</a>
+        <a href="/viewcourseuser" class="RegCourseLink" id="course">Register Course</a>
+        <a href="viewregisterccas" class="RegCCALink" id="cca">Register CCA</a>
+        <a href="/payschoolfee" class="paySchoolLink" id="payschool">Pay School Fees</a>
+        <a href="viewpayrolllist" class="payrollLink" id="payroll">Invoice</a>
+        <a href="/viewgrades" class="GradeLink">Grades</a>
+        <a href="/loginpage" class="login">Login</a>
+        
+      </div>
+      <h1 class="centered">Welcome to the Home Page!</h1>
+      <script src='/js/jquery.min.js'></script>
+      <script src='/js/auth.js'></script>
+      <script src='/js/index.js'></script>
+</body>
+</html>

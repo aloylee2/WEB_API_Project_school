@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student School Fees</title>
+</head>
+
+<body>
+    <section>
+        <form onsubmit="return schoolfees();">
+            <label for="">Card Number: </label>
+            <input type="text" name="s" id="s">
+            <br>
+            <label for="">Expiry Date</label>
+            <input type="text" name="a" id="a">
+            <br>
+            <label for="">Amount: </label>
+            <input type="text" name="amount" id="amount">
+            <br>
+            <button type="submit">Pay amount</button>
+        </form>
+        <div class="statusMessage"></div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/schoolfee.js"></script>
+    <script src='/js/auth.js'></script>
+</body>
+
+</html>
